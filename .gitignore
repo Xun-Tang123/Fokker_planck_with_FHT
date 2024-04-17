@@ -1,0 +1,5 @@
+
+*.npz
+__pycache__/functional_hierarchical_tensor_fourier.cpython-39.pyc
+*.pyc
+/.ipynb_checkpoints
