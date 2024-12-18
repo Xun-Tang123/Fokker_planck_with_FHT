@@ -175,7 +175,7 @@ class FunctionalHierarchicalTensorFourier:
     def unpack_child_message(self, node, eval_msg):
         msg1 = eval_msg[(self.child(node, 1), node)]
         msg2 = eval_msg[(self.child(node, 2), node)]
-        has_none_msg = msg1 == 'None' or msg2 == 'None'
+        has_none_msg = msg1 is 'None' or msg2 is 'None'
         return msg1, msg2, has_none_msg
 
     def update_eval_msg(self, x_n, node, eval_msg, orientation):
